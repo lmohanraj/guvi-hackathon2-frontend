@@ -70,7 +70,7 @@ function App() {
       )}
       {show ? (
         <div className="cart">
-          <Button className="cartButton" onClick={() => setShow(!show)}> Cart ({cartCount}) </Button>
+          <Button className="cartButton" onClick={() => setShow(!show)}> Go to Cart ({cartCount}) </Button>
         </div>
       ) : (
         ""

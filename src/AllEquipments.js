@@ -8,9 +8,9 @@ export default function AllEquipments(props) {
         </div>
         <Col md="3" className="content">
           <h2>{props.da.name}</h2>
-          <p>${props.da.price}</p>
+          <p>${props.da.price}<sub> /day</sub></p>
           {props.da.inCart === true ? (
-            <Button disabled>Add to cart</Button>
+            <Button disabled>Added to cart</Button>
           ) : (
             <Button
               onClick={() => {
