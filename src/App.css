@@ -2,37 +2,158 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  font-size: 4rem;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 30px;
+  padding: 30px;
   color: white;
+  background: #49bfe0;
+background: linear-gradient(90deg,#49bfe0 0%, #004d89 40%, #f63c3f 80%);
+background: -webkit-linear-gradient(90deg,#49bfe0 0%, #004d89 40%, #f63c3f 80%);
+background: -moz-linear-gradient(90deg,#49bfe0 0%, #004d89 40%, #f63c3f 80%);
 }
 
-.App-link {
-  color: #61dafb;
+a{
+  color: white;
+  text-decoration: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+h4{
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+h2{
+  margin: 5px 0px 0px 0px;
+}
+
+.aboutUsTag{
+  padding-left: 50px;
+}
+
+.aboutUsTag:hover{
+  cursor: pointer;
+}
+
+.aboutContent{
+  padding: 20px;
+}
+
+.OtherDetails{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+
+.quantity{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter{
+  border: 1px solid grey;
+  padding: 2px 10px 2px 10px;
+  border-radius: 5px;
+}
+
+.counter:hover{
+  cursor: pointer;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.dummy{
+  /* height: 100px; */
+  width: max-content;
+  background-color:#f0e3e7;
+}
+
+ .card{
+  border: 1px solid #f0e3e7;
+  border-radius: 20px;
+  overflow: hidden;
+  width: max-content;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+} 
+
+.image{
+  width: 300px;
+  height: 200px;
+}
+
+.cart{
+  text-align: right;
+  margin: 20px 80px 20px 0px;
+}
+
+Button{
+  background-color: #F74037;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.cartButton{
+  border: 1px solid #004d89;
+  background-color: #004d89;
+}
+
+Button:hover{
+  cursor: pointer;
+}
+
+Button:disabled{
+  opacity: 50%;;
+}
+
+.cartDetails{
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  align-items: center !important;
+}
+
+.cartCount{
+  font-size: 1.3rem;
+}
+
+.cartPrice{
+  color: black;
+  font-size: 1.3rem;
 }
